@@ -12,7 +12,7 @@ const Cart = () => {
     return (
         <div style={{ margin: "100px 0 40px 0" , textAlign:"center"}}>
             <h2>Cart</h2>
-            <div className="fshowProducts" style={{ display: "flex",marginRight:"10px" , border:"3px solid black" , borderRadius:" 5%" }}>
+            <div className="fshowProducts" style={{ display: "flex",marginLeft:"100px" , border:"3px solid rgb(240, 238, 238)" , width:"1150px" }}>
                 {cartItems.length === 0 ? <p>No items in cart</p> : cartItems.map((item) => (
                     <div key={item.id} style={{ padding: "10px", marginBottom: "10px" }}>
                         <img src={item.imageUrl} alt={item.product} style={{ width: "250px", height: "250px" }} />
@@ -22,7 +22,7 @@ const Cart = () => {
                     </div>
                 ))}
             </div>
-            <div style={{margin:"50px 0 0 400px" , border:"3px solid black" , borderRadius:" 10%", width:"550px" , height:"200px", textAlign:"center" }}>
+            <div style={{margin:"50px 0 0 400px" , border:"3px solid rgb(240, 238, 238)" , width:"550px" , height:"200px", textAlign:"center" }}>
                 <h2 style={{padding:"35px 0 0 0 "}}>Total Price</h2>
                 {cartItems.length > 0 && (
                 <div style={{ marginTop: "20px" }}>
